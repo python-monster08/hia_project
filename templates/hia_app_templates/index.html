@@ -1,0 +1,752 @@
+{% extends "hia_app_templates/base.html" %}
+{% load static %}
+{% block title %}
+    <title>Home Page</title>
+{% endblock title %}
+
+
+{% block content %}
+
+
+  <!-- ***** Main Banner Area Start ***** -->
+    {% include "hia_app_templates/includes/main-banner.html" %}
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'assets/images/service-icon-01.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Education</h4>
+                <p>Our coaching center provides an unparalleled education experience, blending rigorous academics with practical insights. We aim to foster critical thinking and a deep understanding of the subject matter.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'assets/images/service-icon-02.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Teachers</h4>
+                <p>Learn from the best in the industry. Our educators are highly experienced and dedicated to helping you achieve excellence, offering personalized guidance and support throughout your preparation journey.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'assets/images/service-icon-03.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Students</h4>
+                <p>Join a community of motivated and high-achieving students. Collaborate, compete, and grow alongside peers who share your commitment to success and excellence in competitive exams.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'assets/images/service-icon-02.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Online Meeting</h4>
+                <p>Stay connected with our online meeting platforms. Participate in live classes, webinars, and doubt-clearing sessions from the comfort of your home, ensuring uninterrupted learning.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'assets/images/service-icon-03.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Networking</h4>
+                <p>Build a robust network with fellow aspirants, alumni, and industry professionals. Our platform provides numerous opportunities for networking, mentoring, and career advancement.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories">
+            <h4>Event Categories</h4>
+            <ul>
+              <li><a href="upsc-prelims-workshop.html">UPSC Prelims Workshop</a></li>
+              <li><a href="mppsc-mains-strategy.html">MPPSC Mains Strategy</a></li>
+              <li><a href="essay-writing-sessions.html">Essay Writing Sessions</a></li>
+              <li><a href="interview-preparation.html">Interview Preparation</a></li>
+              <li><a href="current-affairs-updates.html">Current Affairs Updates</a></li>
+              <li><a href="personality-development-workshop.html">Personality Development</a></li>
+            </ul>
+            <div class="main-button-red">
+              <a href="courses.html">All Upcoming Events</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>₹1599.00</span>
+                  </div>
+                  <a href="upsc-prelims-workshop.html"><img src="{% static 'assets\images\course\UPSC Prelims Workshop.jpg' %}" height="300px" alt="UPSC Prelims Workshop"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Aug <span>10</span></h6>
+                  </div>
+                  <a href="upsc-prelims-workshop.html"><h4>UPSC Prelims Workshop</h4></a>
+                  <p>Comprehensive workshop covering strategies and tips to excel in the UPSC Prelims exam.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>₹5099.00</span>
+                  </div>
+                  <a href="mppsc-mains-strategy.html"><img src="{% static 'assets\images\course\MPPSC Mains Strategy.jpg' %}" height="300px" alt="MPPSC Mains Strategy"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Aug <span>24</span></h6>
+                  </div>
+                  <a href="mppsc-mains-strategy.html"><h4>MPPSC Mains Strategy</h4></a>
+                  <p>In-depth sessions focused on crafting a winning strategy for the MPPSC Mains exam.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>₹2199.00</span>
+                  </div>
+                  <a href="essay-writing-sessions.html"><img src="{% static 'assets\images\course\Essay Writing Sessions.jpg' %}" height="300px" alt="Essay Writing Sessions"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Sep <span>12</span></h6>
+                  </div>
+                  <a href="essay-writing-sessions.html"><h4>Essay Writing Sessions</h4></a>
+                  <p>Improve your essay writing skills with expert guidance tailored for competitive exams.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>₹899.00</span>
+                  </div>
+                  <a href="interview-preparation.html"><img src="{% static 'assets\images\course\Interview Preparation.jpg' %}" height="300px" alt="Interview Preparation"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Sep <span>26</span></h6>
+                  </div>
+                  <a href="interview-preparation.html"><h4>Interview Preparation</h4></a>
+                  <p>Get ready for your UPSC and MPPSC interviews with mock sessions and expert feedback.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>₹799.00</span>
+                  </div>
+                  <a href="personality-development-workshop.html"><img src="{% static 'assets/images/course/Personality Development Workshop.jpg' %}" height="300px" alt="Personality Development Workshop"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Oct <span>03</span></h6>
+                  </div>
+                  <a href="personality-development-workshop.html"><h4>Personality Development </h4></a>
+                  <p>Enhance your personality and soft skills with our interactive and engaging workshop.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>₹999.00</span>
+                  </div>
+                  <a href="current-affairs-updates.html"><img src="{% static 'assets/images/course/Current Affairs Updates.jpg' %}" height="300px" alt="Current Affairs Updates"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Oct <span>03</span></h6>
+                  </div>
+                  <a href="current-affairs-updates.html"><h4>Current Affairs Updates</h4></a>
+                  <p>Stay updated with the latest current affairs crucial for your exam preparation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR UPSC</h3>
+                <p>Join our comprehensive UPSC coaching program, designed to provide you with the best preparation strategies, study materials, and expert guidance to excel in the UPSC exams.</p>
+                <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR MPPSC</h3>
+                <p>Enroll in our specialized MPPSC coaching program that offers in-depth coverage of the syllabus, regular mock tests, and personalized feedback to ensure your success in the MPPSC exams.</p>
+                <div class="main-button-yellow">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordions is-first-expanded">
+            <article class="accordion">
+              <div class="accordion-head">
+                <span>About Our Institute</span>
+                <span class="icon">
+                  <i class="icon fa fa-chevron-right"></i>
+                </span>
+              </div>
+              <div class="accordion-body">
+                <div class="content">
+                  <p>Our institute is dedicated to providing top-notch coaching for UPSC and MPPSC aspirants. With experienced faculty, state-of-the-art facilities, and a supportive learning environment, we help students achieve their dreams of joining the civil services.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-head">
+                <span>UPSC Coaching Program</span>
+                <span class="icon">
+                  <i class="icon fa fa-chevron-right"></i>
+                </span>
+              </div>
+              <div class="accordion-body">
+                <div class="content">
+                  <p>Our UPSC coaching program includes comprehensive study materials, regular test series, and one-on-one mentoring sessions. We focus on both Prelims and Mains, ensuring a holistic preparation strategy.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-head">
+                <span>MPPSC Coaching Program</span>
+                <span class="icon">
+                  <i class="icon fa fa-chevron-right"></i>
+                </span>
+              </div>
+              <div class="accordion-body">
+                <div class="content">
+                  <p>Our MPPSC coaching program is tailored to meet the specific needs of state-level civil services aspirants. We offer detailed syllabus coverage, frequent practice tests, and targeted preparation for each stage of the exam.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-head">
+                <span>Special Workshops and Seminars</span>
+                <span class="icon">
+                  <i class="icon fa fa-chevron-right"></i>
+                </span>
+              </div>
+              <div class="accordion-body">
+                <div class="content">
+                  <p>We regularly conduct workshops and seminars on current affairs, essay writing, and interview preparation. These sessions are designed to enhance your knowledge and boost your confidence for the exams.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Our Popular Courses</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            <div class="item">
+              <img src="{% static 'assets/images/course-01.jpg' %}" alt="UPSC Prelims Workshop">
+              <div class="down-content">
+                <h4>UPSC Prelims Workshop</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹1600</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-02.jpg' %}" alt="MPPSC Mains Strategy">
+              <div class="down-content">
+                <h4>MPPSC Mains Strategy</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹1800</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-03.jpg' %}" alt="Essay Writing Sessions">
+              <div class="down-content">
+                <h4>Essay Writing Sessions</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹1400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-04.jpg' %}" alt="Interview Preparation">
+              <div class="down-content">
+                <h4>Interview Preparation</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹1200</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-01.jpg' %}" alt="Current Affairs Updates">
+              <div class="down-content">
+                <h4>Current Affairs Updates</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹2500</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-02.jpg' %}" alt="Personality Development Workshop">
+              <div class="down-content">
+                <h4>Personality Development</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹2700</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-03.jpg' %}" alt="Advanced GS Course">
+              <div class="down-content">
+                <h4>Advanced GS Course</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹3400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-04.jpg' %}" alt="Optional Subject Mastery">
+              <div class="down-content">
+                <h4>Optional Subject Mastery</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹3600</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-01.jpg' %}" alt="Ethics and Integrity">
+              <div class="down-content">
+                <h4>Ethics and Integrity</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹4000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-02.jpg' %}" alt="Public Administration">
+              <div class="down-content">
+                <h4>Public Administration</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹4300</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-03.jpg' %}" alt="General Studies Foundation">
+              <div class="down-content">
+                <h4>General Studies Foundation</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹4800</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'assets/images/course-04.jpg' %}" alt="Current Affairs Masterclass">
+              <div class="down-content">
+                <h4>Current Affairs Masterclass</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>₹5600</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>A Few Facts About Our Institute</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">98</div>
+                    <div class="count-title">Successful Students</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">150</div>
+                    <div class="count-title">Expert Teachers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">3000</div>
+                    <div class="count-title">Enrolled Students</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">45</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://youtu.be/-9c4l-YvPWg?si=JjCOtiytnsxZcvkb" target="_blank"><img src="{% static 'assets/images/play-icon.png' %}" alt="Play Video"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>+91 9109723996</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>info@hicareers.org</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>KK Plaza, Plot No.1, MP Nagar, Zone-2, 462011</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.hicareer.org</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2022 HICareers Pvt. Ltd. All Rights Reserved. 
+          <br>
+          Design: <a href="https://www.hicareer.org" target="_parent" title="free css templates">HIA Careers</a>
+          <br>
+          Distibuted By: <a href="https://www.hicareer.org" target="_blank" title="Build Better UI, Faster">HIA Coaching Center</a>
+        </p>
+    </div>
+  </section>
+{% endblock content %}
+
+
+
+{% block custom_js %}
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+{% endblock custom_js %}

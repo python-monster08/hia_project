@@ -1,0 +1,56 @@
+{% extends 'hia_app_templates/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Document Generation Success</title>
+{% endblock title %}
+
+{% block custom_css %}
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    body {
+        background: url("{% static 'assets/images/course-02.jpg' %}") no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    .success-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+        z-index: 5;  /* Ensure this is below the headers */
+        position: relative;  /* Create a new stacking context */
+        text-align: center;
+    }
+    .success-container h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .btn-primary {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+</style>
+{% endblock custom_css %}
+
+{% block content %}
+
+<div class="success-container">
+    <h2>Document Generated Successfully!</h2>
+    <p>Your Class Plus document has been generated successfully.</p>
+    <h4 class="mt-2 mb-2">Check Generated File at Path:</h4>
+    <p>{{file_path}}</p>
+    <a href="/" class="btn btn-primary">Go to Home</a>
+</div>
+{% endblock content %}

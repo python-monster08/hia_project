@@ -1,0 +1,77 @@
+{% load static %}
+  
+
+
+    {% comment %} <!-- Upper Header start -->
+    <div class="sub-header">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-8">
+            <div class="left-content">
+                <p>
+                <span><i class="fa fa-phone" aria-hidden="true"></i> +91 9109723996</span>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i> info@hicareers.org</span>
+                </p>
+                
+            </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4">
+            <div class="right-icons">
+                <ul>
+                <li><a href="https://www.facebook.com/people/HIA-Civil-Services-Academy/61559454314671/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/@HIACivilServicesAcademy"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/hia_civil_services_academy/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Upper Header end --> {% endcomment %}
+
+
+
+  <!-- ***** Main Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="/" class="logo">
+                        <img src="{% static 'assets\images\logo_hia.png' %}" alt="" srcset="" height="90px">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="/" class="active">Home</a></li>
+                        <!--
+                        <li><a href="courses.html">Meetings</a></li>
+                        -->
+                        <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
+                       
+                        <li class="has-sub">
+                            <a href="javascript:void(0)">Our Modules</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'upload_file' %}">Upload Excel File</a></li>
+                                <li><a href="{% url 'add_question' %}">Add Question</a></li>
+                                <li><a href="{% url 'generate_questions_document' %}">Generate Class Plus word file</a></li>
+                                <li><a href="{% url 'generate_questions' %}">Generate Question word file</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#meetings">Courses</a></li> 
+                        <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Main Header Area End ***** -->

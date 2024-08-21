@@ -1,0 +1,131 @@
+{% extends 'hia_app_templates/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Document Upload</title>
+{% endblock title %}
+
+{% block custom_css %}
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    body {
+        background: url("{% static 'assets/images/course-02.jpg' %}") no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    .upload-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        width: 100%;
+        margin: 15px auto;
+        z-index: 5;  /* Ensure this is below the headers */
+        position: relative;  /* Create a new stacking context */
+    }
+    .upload-container h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+    .btn-primary {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+</style>
+{% endblock custom_css %}
+
+{% block content %}
+
+
+<section class="contact-us" id="contact">
+    <div class="upload-container">
+        <h2>Upload Your Excel File</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>+91 9109723996</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>info@hicareers.org</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>KK Plaza, Plot No.1, MP Nagar, Zone-2, 462011</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.hicareer.org</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2022 HICareers Pvt. Ltd. All Rights Reserved. 
+          <br>
+          Design: <a href="https://www.hicareer.org" target="_parent" title="free css templates">HIA Careers</a>
+          <br>
+          Distibuted By: <a href="https://www.hicareer.org" target="_blank" title="Build Better UI, Faster">HIA Coaching Center</a>
+        </p>
+    </div>
+  </section>
+{% endblock content %}

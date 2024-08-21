@@ -1,0 +1,128 @@
+{% load static %}
+
+{% block custom_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+{% endblock custom_css %}
+<!-- Upper header -->
+<div class="upper-header d-flex justify-content-between align-items-center px-3 py-2">
+    <div>
+        <i class="fas fa-phone-alt me-2"></i> +91 9109723996
+        <i class="fas fa-envelope me-2 ms-4"></i> info@hicareers.org
+    </div>
+    <div class="notification-section">
+        <div class="notification-text">
+            <marquee width="60%" direction="left" height="100px">
+                This is a sample scrolling text that has scrolls texts to the left.
+            </marquee>
+        </div>
+    </div>
+    <div>
+        <a href="#" class="text-reset me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-reset me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-reset me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-reset me-3"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img src="{% static 'assets/images/logos/logo.png' %}" height="100" alt="Logo" loading="lazy"/>
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <li><a class="dropdown-item" href="{% url 'courses' %}">UPSC</a></li>
+                        <li><a class="dropdown-item" href="{% url 'courses' %}">MPPSC</a></li>
+                        <li><a class="dropdown-item" href="{% url 'courses' %}">Interview Prepration</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">Gellary</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <!-- Notifications -->
+            <div class="dropdown">
+                <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Some news</a></li>
+                    <li><a class="dropdown-item" href="#">Another news</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Avatar" loading="lazy"/>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+{% block custom_js %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    {% comment %} <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script> {% endcomment %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <script type="module">
+        // Initialization for ES Users
+        import { Dropdown, Collapse, initMDB } from "mdb-ui-kit";
+        initMDB({ Dropdown, Collapse });
+    </script>
+    <script>
+        $(document).ready(function(){
+            function moveNotification() {
+                $('.notification-text').animate({ 
+                    left: '-100%' 
+                }, 10000, 'linear', function() {
+                    $(this).css('left', '100%');
+                    moveNotification();
+                });
+            }
+            moveNotification();
+        });
+    </script>
+{% endblock custom_js %}
