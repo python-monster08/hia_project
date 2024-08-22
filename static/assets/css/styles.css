@@ -219,7 +219,7 @@
 }
 
 .phone-screen {
-    background-image: url("{% static 'assets/images/phone-bg.jpg' %}");
+    background-image: url('../images/course-01.jpg');
     background-size: cover;
     border-radius: 20px;
     padding: 20px;
