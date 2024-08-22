@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5y5aze-0*li9%@-ry5#vnk#ra&j22)gli9d82+vs5@kki5sync'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hicareers.org', 'www.hicareers.org', 'localhost']
 
 
 # Application definition
@@ -85,15 +85,15 @@ DATABASES = {
 
 
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'zdmtgnry_hicareers_db',
-#         'USER': 'zdmtgnry_hicareers_user',
-#         'PASSWORD': 'Hicareers@8896#',
-#         'HOST': '103.160.107.147',  # Set to 'localhost' for local development
-#         'PORT': '3306',  # Default MySQL port is '3306'
-#     }
-# }
+#         'default': {
+#          'ENGINE': 'django.db.backends.mysql',
+#          'NAME': 'hicareers_hicareers_db',
+#          'USER': 'hicareers_root',
+#          'PASSWORD': 'Hicareers@8896#',
+#          'HOST': '103.191.208.60',  # Set to 'localhost' for local development
+#          'PORT': '3306',  # Default MySQL port is '3306'
+#      }
+#  }
 
 
 # Password validation
