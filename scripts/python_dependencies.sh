@@ -11,6 +11,8 @@ fi
 
 # Change ownership to ubuntu user
 sudo chown -R ubuntu:ubuntu "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
+sudo chown -R ubuntu:ubuntu /home/ubuntu/$PROJECT_MAIN_DIR_NAME/venv
+
 
 # Create virtual environment
 echo "Creating virtual environment..."

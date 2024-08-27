@@ -9,3 +9,5 @@ sudo apt install -y nginx
 
 # Install Virtualenv
 sudo apt install -y virtualenv
+
+sudo apt-get install pkg-config libmysqlclient-dev
